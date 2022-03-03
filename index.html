@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <div class="track">
+        <p class="track__name"></p>
+        <p class="track__time"></p>
+      </div>
+      <div class="player-ranges">
+        <input class="track__timelength" type="range" name="" id="" value="0" min="0" max="100" step="0.1">
+        <div class="player__volume">
+          <button class="play-volume player-icon" id="volume"></button>
+          <input class="track__volumelength" type="range" name="" id="" value="0.5" min="0" max="1" step="0.01">
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name"/>
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="settings-icon player-icon"></button>
+    <div class="quotes">
+      <button class="change-quote"></button>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="footer__block">
+      <a class="footer__block_item footer__github-logo" href="https://github.com/m9t3zhn1k" target="_blank"></a>
+      <p class="footer__block_item footer__year">&copy; 2021</p>
+      <a class="footer__block_item footer__rs-logo" href="https://rs.school/js/" target="_blank"></a>
+  </div>
+  </footer>
+  <div class="settings__popup">
+    <div class="settings__container">
+      <button class="setting__close-button">&#215;</button>
+      <div class="settings">
+        <p class="settings__title"></p>
+        <div class="settings__content">
+          <div class="settings__language language">
+            <span class="settings__subtitle language__subtitle"></span>
+            <div class="settings__languages">
+              <label class="language__label" for="en">
+                <span></span>
+                <input type="radio" name="language" id="en">
+              </label>
+              <label class="language__label" for="ru">
+                <span></span>
+                <input type="radio" name="language" id="ru">
+              </label>
+            </div>
+          </div>
+          <div class="settings__background">
+            <span class="settings__subtitle background__subtitle"></span>
+            <div class="background__sources">
+              <label class="background__label" for="github_bcg">
+                <span></span>
+                <input type="radio" name="background" id="github_bcg">
+              </label>
+              <label class="background__label" for="unsplash_bcg">
+                <span></span>
+                <input type="radio" name="background" id="unsplash_bcg">
+              </label>
+              <label class="background__label" for="flickr_bcg">
+                <span></span>
+                <input type="radio" name="background" id="flickr_bcg">
+              </label>
+            </div>
+          </div>
+          <div class="settings__tags">
+            <span class="settings__subtitle tags__subtitle"></span>
+            <div class="background__tags">
+              <label class="tag__label" for="timeofday">
+                <span></span>
+                <input type="radio" name="tag" id="timeofday">
+              </label>
+              <label class="tag__label" for="sport">
+                <span></span>
+                <input type="radio" name="tag" id="sport">
+              </label>
+              <label class="tag__label" for="science">
+                <span></span>
+                <input type="radio" name="tag" id="science">
+              </label>
+            </div>
+          </div>
+          <div class="settings__hidden">
+            <span class="settings__subtitle hidden__subtitle"></span>
+            <div class="hidden__labels">
+              <label class="hidden__label" for="playerHidden">
+                <span></span>
+                <input type="radio" name="" id="playerHidden">
+              </label>
+              <label class="hidden__label" for="quotesHidden">
+                <span></span>
+                <input type="radio" name="" id="quotesHidden">
+              </label>
+              <label class="hidden__label" for="weatherHidden">
+                <span></span>
+                <input type="radio" name="" id="weatherHidden">
+              </label>
+              <label class="hidden__label" for="timeHidden">
+                <span></span>
+                <input type="radio" name="" id="timeHidden">
+              </label>
+              <label class="hidden__label" for="dateHidden">
+                <span></span>
+                <input type="radio" name="" id="dateHidden">
+              </label>
+              <label class="hidden__label" for="greetingHidden">
+                <span></span>
+                <input type="radio" name="" id="greetingHidden">
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
