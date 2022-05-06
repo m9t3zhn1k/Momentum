@@ -24,7 +24,7 @@ function getRandomNum(min, max) {
 }
 
 function setBgGH(timeofday, bgNum) {
-    let link = `https://raw.githubusercontent.com/m9t3zhn1k/stage1-tasks/assets/images/${timeofday}/${bgNum}.webp`
+    let link = `../assets/img/${timeofday}/${bgNum}.webp`;
     const img = new Image();
     img.src = link; 
     img.onload = () => {      
