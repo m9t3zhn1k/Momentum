@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Arial-MT';
-  src: url("../assets/fonts/Arial-MT.woff"); /* Путь к файлу со шрифтом */
- }
+  src: url("../assets/fonts/Arial-MT.woff");
+}
 
 * {
   box-sizing: border-box;
@@ -133,7 +133,6 @@ body {
 }
 
 .play-item::before {
-  /* content: "\2713";  */ 
   content: "";
   width: 15px;
   height: 15px;
@@ -142,8 +141,6 @@ body {
   position: absolute;
   left: 0;
   top: 5px;
-  /* top: 2px; */
-  /* font-weight: 900; */
 }
 .play-item.mute::before{
   background-image: url("../assets/svg/pause.svg") 
